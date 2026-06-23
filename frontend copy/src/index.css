@@ -1,0 +1,228 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #eef3ff;
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  height: 70px;
+  margin: 12px;
+  padding: 0 30px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #1a7e8f;
+  color: white;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Navigation */
+.nav-links,
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.link:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.active-link {
+  background: white;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* Username */
+.username {
+  color: white;
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn,
+.signup-btn,
+.logout-btn,
+.notification-btn {
+  background: #145e68;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-right: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover,
+.signup-btn:hover,
+.logout-btn:hover,
+.notification-btn:hover {
+  background: #3d9297;
+}
+
+.login-btn {
+  text-decoration: none;
+  color: #5cc6d3;
+  border: 1px solid #8fc5db;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+/* Inputs */
+.ip,
+.searchbtn {
+  padding: 4px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+}
+
+.ip {
+  width: 260px;
+}
+
+.searchbtn {
+  width: 200px;
+}
+
+.searchbtn:focus,
+.ip:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Item Card */
+.div {
+  background: white;
+  margin: 10px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: 0.25s;
+}
+
+.div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.itemType {
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  color: #1e293b;
+}
+
+p {
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Recommendation */
+.recommend-header {
+  text-align: center;
+}
+
+.recommend-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Keywords */
+.keyword-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.keyword {
+  background: #dcfce7;
+  color: #166534;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+/* Create Item Form */
+.createContainer {
+  min-height: calc(100vh - 90px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.postItem {
+  width: 500px;
+  padding: 24px;
+
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.showhide {
+  background: #e2e8f0;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+/* Search */
+.searchBar {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+/* Loading Overlay */
+.AfterSubmit {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
